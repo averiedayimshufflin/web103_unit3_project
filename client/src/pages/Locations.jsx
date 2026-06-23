@@ -11,6 +11,8 @@ const Locations = () => {
     useEffect(() => {
         (async () => {
             try {
+                // COPY/PASTE HERE, STEP 7:
+                // The home page gets all locations here so the overlay buttons can show venue names.
                 const locationsData = await LocationsAPI.getAllLocations()
                 setLocations(locationsData)
 

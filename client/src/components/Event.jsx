@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import EventsAPI from '../services/EventsAPI'
+import dates from '../utils/dates'
 import '../css/Event.css'
 
 const Event = (props) => {
@@ -10,6 +12,8 @@ const Event = (props) => {
     useEffect(() => {
         (async () => {
             try {
+                // COPY/PASTE HERE, STEP 7:
+                // Event cards receive an event id, then fetch the full event details here.
                 const eventData = await EventsAPI.getEventsById(props.id)
                 setEvent(eventData)
             }
