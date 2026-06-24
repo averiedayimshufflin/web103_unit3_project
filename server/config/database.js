@@ -1,8 +1,8 @@
 import pg from 'pg'
+import dotenv from 'dotenv'
 
-// COPY/PASTE HERE, STEP 2:
-// This file is where your backend connects to your Render PostgreSQL database.
-// The values come from server/.env, so do not paste your password directly in here.
+dotenv.config()
+
 const config = {
     user: process.env.PGUSER,
     password: process.env.PGPASSWORD,

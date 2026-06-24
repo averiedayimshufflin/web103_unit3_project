@@ -2,12 +2,8 @@ import express from 'express'
 import path from 'path'
 import favicon from 'serve-favicon'
 import dotenv from 'dotenv'
-
-// COPY/PASTE HERE, STEP 5:
-// Import the routers you create in server/routes.
-// Example:
-// import eventsRouter from './routes/events.js'
-// import locationsRouter from './routes/locations.js'
+import eventsRouter from './routes/events.js'
+import locationsRouter from './routes/locations.js'
 
 
 dotenv.config()
@@ -26,11 +22,8 @@ else if (process.env.NODE_ENV === 'production') {
     app.use(express.static('public'))
 }
 
-// COPY/PASTE HERE, STEP 5:
-// Tell Express which API paths should use your route files.
-// Example:
-// app.use('/api/events', eventsRouter)
-// app.use('/api/locations', locationsRouter)
+app.use('/api/events', eventsRouter)
+app.use('/api/locations', locationsRouter)
 
 
 if (process.env.NODE_ENV === 'production') {

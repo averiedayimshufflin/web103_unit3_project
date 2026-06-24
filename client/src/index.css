@@ -9,15 +9,17 @@
     background-attachment: fixed;
     background-color: var(--secondary-color);
     font-family: Nunito Sans, Verdana, sans-serif;
-    height: 100vh;
-    --main-color: rgb(217, 29, 242);
-    --secondary-color: rgb(3, 1, 64);
+    min-height: 100vh;
+    --main-color: rgb(226, 74, 43);
+    --secondary-color: rgb(18, 34, 58);
+    --accent-color: rgb(17, 164, 154);
+    --gold-color: rgb(245, 184, 64);
     --primary: var(--main-color);
-    --primary-hover: rgb(111, 28, 166);
-    --primary-focus: rgb(217, 29, 242);
+    --primary-hover: rgb(181, 49, 29);
+    --primary-focus: rgb(17, 164, 154);
     --secondary: var(--secondary-color);
-    --secondary-hover: rgb(4, 66, 191);
-    --secondary-focus: rgb(111, 28, 166);
+    --secondary-hover: rgb(17, 164, 154);
+    --secondary-focus: rgb(245, 184, 64);
     --h1-color: white;
     --h2-color: white;
     --h3-color: white;
@@ -37,7 +39,7 @@
 
 #root h1 {
     font-family: Rock Salt, cursive;
-    font-size: 3em;
+    font-size: 2.8em;
     font-weight: bold;
     text-shadow: 3px 3px 4px black;
 }
@@ -69,10 +71,15 @@
     align-items: center;
 }
 
+#root [role=button]:hover {
+    background-color: var(--accent-color);
+    border-color: white;
+}
+
 #root article {
     padding: 0px;
 }
 
 #root select {
-    width: 400px;
+    width: min(400px, 100%);
 }

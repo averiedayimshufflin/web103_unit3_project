@@ -4,13 +4,11 @@ import EventsAPI from '../services/EventsAPI'
 
 const Events = () => {
     const [events, setEvents] = useState([])
+    const [selectedLocation, setSelectedLocation] = useState('all')
 
     useEffect(() => {
         (async () => {
             try {
-                // COPY/PASTE HERE, STRETCH FEATURE:
-                // This pulls every event for the optional all-events page.
-                // You can add filtering or sorting after this data loads.
                 const eventsData = await EventsAPI.getAllEvents()
                 setEvents(eventsData)
             }
@@ -20,16 +18,44 @@ const Events = () => {
         })()
     }, [])
 
+    const filteredEvents = selectedLocation === 'all'
+        ? events
+        : events.filter((event) => event.location_id === parseInt(selectedLocation))
+
+    const locations = [...new Map(events.map((event) => [
+        event.location_id,
+        event.location_name
+    ])).entries()]
+
     return (
         <div className='events'>
+            <header className='events-header'>
+                <h2>All Art Events</h2>
+
+                <select
+                    aria-label='Filter events by location'
+                    value={selectedLocation}
+                    onChange={(event) => setSelectedLocation(event.target.value)}
+                >
+                    <option value='all'>All locations</option>
+                    {
+                        locations.map(([id, name]) =>
+                            <option key={id} value={id}>{name}</option>
+                        )
+                    }
+                </select>
+            </header>
+
+            <main>
             {
-                events && events.length > 0 ? events.map((event) =>
+                filteredEvents && filteredEvents.length > 0 ? filteredEvents.map((event) =>
                     <Event
                         key={event.id}
                         id={event.id}
                     />
                 ) : <h2>No events found yet!</h2>
             }
+            </main>
         </div>
     )
 }

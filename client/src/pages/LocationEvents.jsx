@@ -11,9 +11,6 @@ const LocationEvents = ({index}) => {
     useEffect(() => {
         (async () => {
             try {
-                // COPY/PASTE HERE, STEP 7:
-                // This page receives the location id as "index" from App.jsx.
-                // Use it to fetch the selected location and that location's events.
                 const locationData = await LocationsAPI.getLocationById(index)
                 const eventsData = await EventsAPI.getEventsByLocationId(index)
 
@@ -30,7 +27,7 @@ const LocationEvents = ({index}) => {
         <div className='location-events'>
             <header>
                 <div className='location-image'>
-                    <img src={location.image} />
+                    <img src={location.image} alt={location.name} />
                 </div>
 
                 <div className='location-info'>

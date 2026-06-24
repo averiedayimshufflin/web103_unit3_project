@@ -3,6 +3,7 @@
     justify-content: center;
     margin-left: 50px;
     margin-right: 50px;
+    min-height: 560px;
 }
 
 svg {
@@ -18,7 +19,9 @@ svg polygon {
 }
 
 svg polygon:hover {
-    fill: rgba(55, 216, 232, 0.2);
+    fill: rgba(245, 184, 64, 0.35);
+    stroke: white;
+    stroke-width: 2px;
 }
 
 .venue1-button-overlay {
@@ -49,11 +52,29 @@ svg polygon:hover {
     left: -5%;
 }
 
-.venue1-button-overlay button,
-.venue2-button-overlay button,
-.venue3-button-overlay button,
-.venue4-button-overlay button {
+.venue1-button-overlay a,
+.venue2-button-overlay a,
+.venue3-button-overlay a,
+.venue4-button-overlay a {
     width: 200px;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 0.95rem;
+    min-height: 58px;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 720px) {
+    .available-locations {
+        margin: 0;
+        min-height: 360px;
+    }
+
+    .venue1-button-overlay,
+    .venue2-button-overlay,
+    .venue3-button-overlay,
+    .venue4-button-overlay {
+        display: none;
+    }
 }

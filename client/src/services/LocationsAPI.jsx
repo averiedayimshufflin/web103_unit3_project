@@ -1,17 +1,21 @@
-// COPY/PASTE HERE, STEP 6:
-// Put all frontend fetch calls for locations in this file.
-// These paths should match the routes you set up in server/routes/locations.js.
-
 const API_BASE_URL = '/api/locations'
 
-const getAllLocations = async () => {
-    const response = await fetch(API_BASE_URL)
+const getJson = async (url) => {
+    const response = await fetch(url)
+
+    if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`)
+    }
+
     return response.json()
 }
 
+const getAllLocations = async () => {
+    return getJson(API_BASE_URL)
+}
+
 const getLocationById = async (id) => {
-    const response = await fetch(`${API_BASE_URL}/${id}`)
-    return response.json()
+    return getJson(`${API_BASE_URL}/${id}`)
 }
 
 export default {

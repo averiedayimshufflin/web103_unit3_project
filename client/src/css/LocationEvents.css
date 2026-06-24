@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
 }
 
 .location-events header {
@@ -10,11 +10,14 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 10px;
+    border-top: 4px solid var(--gold-color);
+    border-bottom: 4px solid white;
 }
 
 .location-image img {
     width: 300px;
-    height: auto;
+    height: 210px;
+    object-fit: cover;
     border: 1px solid white;
     margin-left: 20px;
 }
@@ -32,8 +35,26 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .location-events main i {
     margin-right: 10px;
+}
+
+@media (max-width: 720px) {
+    .location-events header {
+        grid-template-columns: 1fr;
+        padding: 24px;
+    }
+
+    .location-image img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .location-events main {
+        margin: 0;
+        padding: 20px;
+    }
 }

@@ -12,8 +12,6 @@ const Event = (props) => {
     useEffect(() => {
         (async () => {
             try {
-                // COPY/PASTE HERE, STEP 7:
-                // Event cards receive an event id, then fetch the full event details here.
                 const eventData = await EventsAPI.getEventsById(props.id)
                 setEvent(eventData)
             }
@@ -21,7 +19,7 @@ const Event = (props) => {
                 throw error
             }
         }) ()
-    }, [])
+    }, [props.id])
 
     useEffect(() => {
         (async () => {
@@ -40,7 +38,7 @@ const Event = (props) => {
             try {
                 const timeRemaining = await dates.formatRemainingTime(event.remaining)
                 setRemaining(timeRemaining)
-                dates.formatNegativeTimeRemaining(remaining, event.id)
+                dates.formatNegativeTimeRemaining(timeRemaining, event.id)
             }
             catch (error) {
                 throw error
@@ -50,11 +48,12 @@ const Event = (props) => {
 
     return (
         <article className='event-information'>
-            <img src={event.image} />
+            <img src={event.image} alt={event.title} />
 
             <div className='event-information-overlay'>
                 <div className='text'>
                     <h3>{event.title}</h3>
+                    <p>{event.location_name}</p>
                     <p><i className="fa-regular fa-calendar fa-bounce"></i> {event.date} <br /> {time}</p>
                     <p id={`remaining-${event.id}`}>{remaining}</p>
                 </div>

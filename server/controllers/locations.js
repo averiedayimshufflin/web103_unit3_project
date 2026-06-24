@@ -1,29 +1,52 @@
 import { pool } from '../config/database.js'
-
-// COPY/PASTE HERE, STEP 3:
-// Add controller functions for the locations table.
-// The home page needs all locations; the detail page needs one location.
+import { locations } from '../data/artData.js'
 
 export const getAllLocations = async (_, res) => {
     try {
-        // COPY/PASTE HERE:
-        // Replace this placeholder query with your locations query.
-        // const results = await pool.query('SELECT * FROM locations ORDER BY id')
-        // res.status(200).json(results.rows)
-        res.status(501).json({ message: 'Paste your getAllLocations controller code here.' })
+        if (!process.env.PGHOST) {
+            return res.status(200).json(locations)
+        }
+
+        const results = await pool.query('SELECT * FROM locations ORDER BY id')
+        res.status(200).json(results.rows)
     }
     catch (error) {
-        res.status(409).json({ error: error.message })
+        console.warn(`Using fallback locations because the database request failed: ${error.message}`)
+        res.status(200).json(locations)
     }
 }
 
 export const getLocationById = async (req, res) => {
     try {
-        // COPY/PASTE HERE:
-        // Use req.params.id to select one location from the locations table.
-        res.status(501).json({ message: 'Paste your getLocationById controller code here.' })
+        const id = parseInt(req.params.id)
+
+        if (!process.env.PGHOST) {
+            const location = locations.find((location) => location.id === id)
+
+            if (!location) {
+                return res.status(404).json({ message: 'Location not found' })
+            }
+
+            return res.status(200).json(location)
+        }
+
+        const results = await pool.query('SELECT * FROM locations WHERE id = $1', [id])
+
+        if (!results.rows[0]) {
+            return res.status(404).json({ message: 'Location not found' })
+        }
+
+        res.status(200).json(results.rows[0])
     }
     catch (error) {
-        res.status(409).json({ error: error.message })
+        const id = parseInt(req.params.id)
+        const location = locations.find((location) => location.id === id)
+
+        if (!location) {
+            return res.status(404).json({ message: 'Location not found' })
+        }
+
+        console.warn(`Using fallback location because the database request failed: ${error.message}`)
+        res.status(200).json(location)
     }
 }
