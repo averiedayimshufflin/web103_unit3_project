@@ -12,8 +12,8 @@ The following **required** functionality is completed:
 
 - [x] **The web app uses React to display data from the API**
 - [x] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
-  - [ ] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
-  - [ ] **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command `SELECT * FROM events;` to display your table contents.**
+  - [ X] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [X ] **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command `SELECT * FROM events;` to display your table contents.**
 - [x] **The web app displays a title.**
 - [x] **Website includes a visual interface that allows users to select a location they would like to view.**
   - [x] *Note: A non-visual list of links to different locations is insufficient.*
@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 <!-- Replace this placeholder with your completed GIF after recording the walkthrough. -->
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='hhttps://imgur.com/a/PN1ZhVp' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with **Kap**
 
