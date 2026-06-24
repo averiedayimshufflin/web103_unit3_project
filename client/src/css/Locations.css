@@ -4,11 +4,11 @@
     margin: 0 auto 64px;
     position: relative;
     display: block;
-    border: 5px solid white;
-    border-radius: 8px;
+    border: 6px solid white;
+    border-radius: 18px;
     overflow: hidden;
-    background-color: rgba(18, 34, 58, 0.9);
-    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+    background-color: rgb(133, 215, 247);
+    box-shadow: 0 24px 48px rgba(38, 54, 79, 0.35);
 }
 
 svg {
@@ -21,15 +21,15 @@ svg {
 }
 
 svg polygon {
-    fill: rgba(17, 164, 154, 0.16);
-    stroke: rgba(255, 255, 255, 0.65);
+    fill: rgba(255, 203, 61, 0.22);
+    stroke: rgba(38, 54, 79, 0.75);
     stroke-width: 1.5px;
     cursor: pointer;
     transition: fill 0.2s ease, stroke 0.2s ease;
 }
 
 svg polygon:hover {
-    fill: rgba(245, 184, 64, 0.35);
+    fill: rgba(47, 117, 255, 0.32);
     stroke: white;
     stroke-width: 2px;
 }
@@ -40,10 +40,11 @@ svg polygon:hover {
     left: 24px;
     z-index: 12;
     padding: 8px 14px;
-    background-color: rgba(18, 34, 58, 0.88);
-    border: 2px solid white;
-    border-radius: 6px;
-    text-shadow: 2px 2px 4px black;
+    color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 3px solid var(--gold-color);
+    border-radius: 999px;
+    text-shadow: none;
 }
 
 .venue1-button-overlay {
@@ -90,8 +91,9 @@ svg polygon:hover {
     text-align: center;
     padding: 10px 12px;
     background-color: var(--main-color);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 8px 18px rgba(38, 54, 79, 0.3);
     line-height: 1.1;
+    border-color: var(--gold-color);
 }
 
 #root .available-locations [role=button] {

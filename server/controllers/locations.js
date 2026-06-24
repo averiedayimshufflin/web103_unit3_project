@@ -1,5 +1,5 @@
 import { pool } from '../config/database.js'
-import { locations } from '../data/artData.js'
+import { locations } from '../data/goData.js'
 
 export const getAllLocations = async (_, res) => {
     try {

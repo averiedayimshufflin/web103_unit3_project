@@ -1,5 +1,5 @@
 import { pool } from '../config/database.js'
-import { eventsWithLocationNames } from '../data/artData.js'
+import { eventsWithLocationNames } from '../data/goData.js'
 
 const formatEvent = (event) => {
     const date = event.date instanceof Date ? event.date : new Date(event.date)

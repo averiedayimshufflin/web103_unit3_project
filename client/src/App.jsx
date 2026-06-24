@@ -12,19 +12,19 @@ const App = () => {
       element: <Locations />
     },
     {
-      path: '/canvas-courtyard',
+      path: '/beacon-park',
       element: <LocationEvents index={1} />
     },
     {
-      path: '/indigo-print-studio',
+      path: '/raid-plaza',
       element: <LocationEvents index={2} />
     },
     {
-      path: '/sculpture-garden',
+      path: '/lure-lagoon',
       element: <LocationEvents index={3} />
     },
     {
-      path: '/lightbox-gallery',
+      path: '/hatchery-station',
       element: <LocationEvents index={4} />
     },
     {
@@ -37,7 +37,7 @@ const App = () => {
     <div className='app'>
 
       <header className='main-header'>
-        <h1>Palette Plaza</h1>
+        <h1>CatchQuest GO</h1>
 
         <div className='header-buttons'>
           <Link to='/' role='button'>Home</Link>

@@ -1,8 +1,8 @@
-# WEB103 Project 3 - Palette Plaza
+# WEB103 Project 3 - CatchQuest GO
 
 Submitted by: **Averie Ahn**
 
-About this web app: **Palette Plaza is an art-themed virtual community space where users can explore local art events by location. Users can click on a visual map to visit different art spaces, view events for each space, browse all events, filter events by location, and see countdowns for upcoming or past events.**
+About this web app: **CatchQuest GO is a Pokemon Go-inspired community event finder where users can explore local creature-catching meetups by location. Users can click on a visual game map to visit different meetup zones, view events for each zone, browse all events, filter events by location, and see countdowns for upcoming or past events.**
 
 Time spent: **8** hours
 
@@ -29,11 +29,11 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Added an art-themed concept with four unique locations: Canvas Courtyard, Indigo Print Studio, Sculpture Garden, and Lightbox Gallery.
-- [x] Added fallback art event data so the app can still be previewed locally if the Render database is temporarily unreachable.
+- [x] Added a Pokemon Go-inspired concept with four unique locations: Beacon Park, Raid Plaza, Lure Lagoon, and Hatchery Station.
+- [x] Added fallback meetup event data so the app can still be previewed locally if the Render database is temporarily unreachable.
 - [x] Added a database reset script that creates and seeds both `locations` and `events` tables.
 - [x] Added styled event cards with images, location names, dates, times, and hover overlays.
-- [x] Added responsive styling so the map and event pages work on smaller screens.
+- [x] Added a custom game-map graphic and responsive styling so the map and event pages work on smaller screens.
 
 ## Video Walkthrough
 
@@ -46,8 +46,8 @@ GIF created with **Kap**
 
 Walkthrough should show:
 
-- The Palette Plaza title on the homepage.
-- The visual location map with clickable art spaces.
+- The CatchQuest GO title on the homepage.
+- The visual location map with clickable meetup zones.
 - Clicking each location and navigating to its unique URL.
 - Events displayed for the selected location.
 - The all-events page and location filter.
@@ -72,10 +72,10 @@ The app includes fallback data for local previewing, but the project is still se
 ## Routes
 
 - `/` shows the visual location picker.
-- `/canvas-courtyard` shows Canvas Courtyard events.
-- `/indigo-print-studio` shows Indigo Print Studio events.
-- `/sculpture-garden` shows Sculpture Garden events.
-- `/lightbox-gallery` shows Lightbox Gallery events.
+- `/beacon-park` shows Beacon Park events.
+- `/raid-plaza` shows Raid Plaza events.
+- `/lure-lagoon` shows Lure Lagoon events.
+- `/hatchery-station` shows Hatchery Station events.
 - `/events` shows all events with a location filter.
 
 ## License

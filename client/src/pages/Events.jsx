@@ -30,7 +30,7 @@ const Events = () => {
     return (
         <div className='events'>
             <header className='events-header'>
-                <h2>All Art Events</h2>
+                <h2>All Catch Events</h2>
 
                 <select
                     aria-label='Filter events by location'

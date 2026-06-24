@@ -30,36 +30,36 @@ const seedLocationsTable = `
     INSERT INTO locations (name, address, city, state, zip, image)
     VALUES
         (
-            'Canvas Courtyard',
-            '101 Mural Way',
+            'Beacon Park',
+            '101 Trainer Trail',
             'Dallas',
             'TX',
             '75201',
-            'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=900&q=80'
+            'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80'
         ),
         (
-            'Indigo Print Studio',
-            '240 Inkpress Ave',
+            'Raid Plaza',
+            '240 Battle Square',
             'Dallas',
             'TX',
             '75202',
-            'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=80'
+            'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=80'
         ),
         (
-            'Sculpture Garden',
-            '88 Bronze Loop',
+            'Lure Lagoon',
+            '88 Ripple Loop',
             'Dallas',
             'TX',
             '75204',
-            'https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&w=900&q=80'
+            'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80'
         ),
         (
-            'Lightbox Gallery',
-            '412 Prism Street',
+            'Hatchery Station',
+            '412 Incubator Street',
             'Dallas',
             'TX',
             '75206',
-            'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80'
+            'https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=900&q=80'
         )
 `
 
@@ -67,59 +67,59 @@ const seedEventsTable = `
     INSERT INTO events (title, date, time, image, location_id)
     VALUES
         (
-            'Community Mural Jam',
+            'Community Catch Walk',
             '2026-07-12',
             '18:30',
-            'https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=900&q=80',
+            'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80',
             1
         ),
         (
-            'Open-Air Figure Drawing',
+            'Buddy Photo Sprint',
             '2026-07-20',
             '10:00',
-            'https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=80',
+            'https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=900&q=80',
             1
         ),
         (
-            'Risograph Poster Night',
+            'Legendary Raid Hour',
             '2026-08-03',
             '19:00',
-            'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=900&q=80',
+            'https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=80',
             2
         ),
         (
-            'Zine Swap and Staple Party',
+            'Team Battle Meetup',
             '2026-06-14',
             '16:00',
-            'https://images.unsplash.com/photo-1491841573634-28140fc7ced7?auto=format&fit=crop&w=900&q=80',
+            'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80',
             2
         ),
         (
-            'Clay Creatures Workshop',
+            'Lure Drop Picnic',
             '2026-08-17',
             '13:30',
-            'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=900&q=80',
+            'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=900&q=80',
             3
         ),
         (
-            'Found Object Sculpture Walk',
+            'Night Safari Search',
             '2026-09-05',
-            '11:00',
-            'https://images.unsplash.com/photo-1554188248-986adbb73be4?auto=format&fit=crop&w=900&q=80',
+            '20:00',
+            'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80',
             3
         ),
         (
-            'Projection Mapping Night',
+            'Egg Hatch Loop',
             '2026-07-26',
-            '20:30',
-            'https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=80',
+            '09:30',
+            'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80',
             4
         ),
         (
-            'Tiny Gallery Pop-Up',
+            'Stardust Cleanup Crew',
             '2026-06-01',
             '17:00',
-            'https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80',
+            'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=80',
             4
         )
 `

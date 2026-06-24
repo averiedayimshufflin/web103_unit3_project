@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+  <title id="title">CatchQuest GO city map</title>
+  <desc id="desc">A bright stylized game map with parks, roads, water, plazas, trails, and four activity zones.</desc>
+  <rect width="1000" height="500" fill="#85d7f7"/>
+  <path d="M0 350 C120 315 220 360 335 330 C470 294 565 312 675 280 C790 248 875 285 1000 242 L1000 500 L0 500 Z" fill="#4fbd72"/>
+  <path d="M0 88 C120 128 230 55 355 98 C490 146 585 68 722 92 C835 112 910 165 1000 128 L1000 0 L0 0 Z" fill="#57c979"/>
+  <path d="M-20 265 C145 244 275 258 410 225 C575 184 730 206 1025 165" fill="none" stroke="#f7f3d6" stroke-width="60" stroke-linecap="round"/>
+  <path d="M160 -30 C190 95 205 178 250 265 C305 372 395 430 535 530" fill="none" stroke="#f7f3d6" stroke-width="48" stroke-linecap="round"/>
+  <path d="M610 -30 C585 95 615 205 698 306 C760 382 858 415 1040 455" fill="none" stroke="#f7f3d6" stroke-width="50" stroke-linecap="round"/>
+  <path d="M0 265 C145 244 275 258 410 225 C575 184 730 206 1000 165" fill="none" stroke="#ffcb3d" stroke-width="8" stroke-dasharray="20 20" opacity="0.75"/>
+  <path d="M160 0 C190 95 205 178 250 265 C305 372 395 430 510 500" fill="none" stroke="#ffcb3d" stroke-width="7" stroke-dasharray="18 18" opacity="0.75"/>
+  <path d="M610 0 C585 95 615 205 698 306 C760 382 858 415 1000 455" fill="none" stroke="#ffcb3d" stroke-width="7" stroke-dasharray="18 18" opacity="0.75"/>
+  <ellipse cx="160" cy="365" rx="145" ry="85" fill="#27a85e"/>
+  <ellipse cx="475" cy="248" rx="126" ry="96" fill="#3aaee2"/>
+  <ellipse cx="842" cy="350" rx="138" ry="82" fill="#30a966"/>
+  <rect x="335" y="75" width="205" height="130" rx="28" fill="#e9515a"/>
+  <rect x="360" y="98" width="155" height="84" rx="18" fill="#ffffff" opacity="0.9"/>
+  <circle cx="437" cy="140" r="34" fill="#2f75ff"/>
+  <circle cx="437" cy="140" r="15" fill="#ffffff"/>
+  <rect x="705" y="72" width="185" height="118" rx="26" fill="#7a6ff0"/>
+  <circle cx="760" cy="130" r="24" fill="#ffcb3d"/>
+  <circle cx="832" cy="130" r="24" fill="#ffcb3d"/>
+  <rect x="735" y="154" width="128" height="18" rx="9" fill="#ffffff" opacity="0.85"/>
+  <rect x="105" y="116" width="150" height="116" rx="24" fill="#ffffff" opacity="0.74"/>
+  <path d="M132 204 C138 154 170 132 214 134 C215 171 186 199 132 204 Z" fill="#25a85e"/>
+  <path d="M118 186 C143 170 168 173 188 195 C164 215 138 213 118 186 Z" fill="#ffcb3d"/>
+  <rect x="640" y="315" width="95" height="95" rx="20" fill="#ffffff" opacity="0.82"/>
+  <path d="M687 335 L725 397 L649 397 Z" fill="#2f75ff"/>
+  <circle cx="165" cy="365" r="34" fill="#ffffff"/>
+  <path d="M131 365 H199" stroke="#26364f" stroke-width="10"/>
+  <circle cx="165" cy="365" r="12" fill="#26364f"/>
+  <circle cx="474" cy="248" r="38" fill="#ffffff"/>
+  <path d="M436 248 H512" stroke="#26364f" stroke-width="10"/>
+  <circle cx="474" cy="248" r="14" fill="#26364f"/>
+  <circle cx="844" cy="350" r="36" fill="#ffffff"/>
+  <path d="M808 350 H880" stroke="#26364f" stroke-width="10"/>
+  <circle cx="844" cy="350" r="13" fill="#26364f"/>
+  <circle cx="437" cy="140" r="40" fill="#ffffff"/>
+  <path d="M397 140 H477" stroke="#26364f" stroke-width="10"/>
+  <circle cx="437" cy="140" r="14" fill="#26364f"/>
+</svg>

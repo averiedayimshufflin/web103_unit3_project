@@ -1,9 +1,4 @@
 .app {
-    background: url('./assets/unitygrid.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
     min-height: 100vh;
 }
 
@@ -15,7 +10,7 @@ header {
 }
 
 .main-header {
-    height: 30vh;
+    height: 26vh;
     width: 85vw;
     align-items: flex-end;
     position: relative;
@@ -49,7 +44,8 @@ header {
 }
 
 .events-header h2 {
-    text-shadow: 2px 2px 4px black;
+    color: var(--secondary-color);
+    text-shadow: 0 2px 0 white;
 }
 
 .events main {

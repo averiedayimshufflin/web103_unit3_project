@@ -10,8 +10,8 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 10px;
-    border-top: 4px solid var(--gold-color);
-    border-bottom: 4px solid white;
+    border-top: 5px solid var(--gold-color);
+    border-bottom: 5px solid white;
 }
 
 .location-image img {
@@ -19,6 +19,7 @@
     height: 210px;
     object-fit: cover;
     border: 1px solid white;
+    border-radius: 16px;
     margin-left: 20px;
 }
 
@@ -26,6 +27,10 @@
     color: white;
     font-size: 0.8em;
     margin-bottom: 0px;
+}
+
+.location-events header h2 {
+    text-shadow: 0 3px 0 var(--secondary-color);
 }
 
 .location-events main {
