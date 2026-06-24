@@ -63,6 +63,8 @@ const Locations = () => {
                 <Link to='/lightbox-gallery' role='button'>{venueNames.venue4}</Link>
             </div>
 
+            <h2 className='map-title'>Choose an art space</h2>
+
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000.32 500" xmlSpace="preserve">
                 <image id="background" xlinkHref={unitygrid} transform="matrix(0.48 0 0 0.48 0 0)"></image>
                 

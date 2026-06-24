@@ -1,21 +1,31 @@
 .available-locations {
-    display: flex;
-    justify-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    min-height: 560px;
+    width: min(1000px, 92vw);
+    min-height: 500px;
+    margin: 0 auto 64px;
+    position: relative;
+    display: block;
+    border: 5px solid white;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(18, 34, 58, 0.9);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
 }
 
 svg {
-    position: absolute;
-    top: -1px;
-    left: 0;
+    position: relative;
+    display: block;
+    top: auto;
+    left: auto;
     width: 100%;
+    height: auto;
 }
 
 svg polygon {
-    fill: transparent;
+    fill: rgba(17, 164, 154, 0.16);
+    stroke: rgba(255, 255, 255, 0.65);
+    stroke-width: 1.5px;
     cursor: pointer;
+    transition: fill 0.2s ease, stroke 0.2s ease;
 }
 
 svg polygon:hover {
@@ -24,32 +34,48 @@ svg polygon:hover {
     stroke-width: 2px;
 }
 
+.map-title {
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    z-index: 12;
+    padding: 8px 14px;
+    background-color: rgba(18, 34, 58, 0.88);
+    border: 2px solid white;
+    border-radius: 6px;
+    text-shadow: 2px 2px 4px black;
+}
+
 .venue1-button-overlay {
-    opacity: 0;
+    opacity: 1;
     z-index: 10;
-    position: relative;
-    top: 15%;
-    left: -5%;
+    position: absolute;
+    top: 62%;
+    left: 5%;
 }
 
 .venue2-button-overlay {
-    opacity: 0;
+    opacity: 1;
     z-index: 10;
+    position: absolute;
+    top: 62%;
+    left: 42%;
 }
 
 .venue3-button-overlay {
-    opacity: 0;
+    opacity: 1;
     z-index: 10;
-    position: relative;
-    left: 30%;
+    position: absolute;
+    top: 44%;
+    right: 4%;
 }
 
 .venue4-button-overlay {
-    opacity: 0;
+    opacity: 1;
     z-index: 10;
-    position: relative;
-    top: 20%;
-    left: -5%;
+    position: absolute;
+    top: 68%;
+    left: 66%;
 }
 
 .venue1-button-overlay a,
@@ -62,19 +88,37 @@ svg polygon:hover {
     font-size: 0.95rem;
     min-height: 58px;
     text-align: center;
-    padding: 10px;
+    padding: 10px 12px;
+    background-color: var(--main-color);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+    line-height: 1.1;
+}
+
+#root .available-locations [role=button] {
+    font-size: 0.95rem;
+    line-height: 1.1;
 }
 
 @media (max-width: 720px) {
     .available-locations {
         margin: 0;
-        min-height: 360px;
+        width: 96vw;
+        min-height: 260px;
     }
 
-    .venue1-button-overlay,
-    .venue2-button-overlay,
-    .venue3-button-overlay,
-    .venue4-button-overlay {
-        display: none;
+    .map-title {
+        top: 10px;
+        left: 10px;
+        font-size: 1rem;
+    }
+
+    .venue1-button-overlay a,
+    .venue2-button-overlay a,
+    .venue3-button-overlay a,
+    .venue4-button-overlay a {
+        width: 130px;
+        min-height: 44px;
+        font-size: 0.7rem;
+        padding: 6px;
     }
 }
